@@ -1,0 +1,128 @@
+body, html, #main-content {
+	height: 100%;
+	display: block;
+}
+#main-banner {
+	width: 100%;
+	height: 100%;
+	background: url(/img/main-banner-bg.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.main-banner-content {
+	position: absolute;
+	top: 6%;
+	width: 100%;
+}
+
+.banner-link, .banner-logo {
+	text-align: center;
+}
+
+.banner-logo {
+	margin-bottom: 30px;
+}
+
+.banner-link a {
+	background: #d25858;
+	color: white!important;
+	padding: 14px 38px!important;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+}
+
+.section-container {
+	min-height: 100%;
+}
+
+dd {
+	margin: 0;
+}
+
+.sub-nav {
+	margin: 0;
+}
+
+[data-magellan-expedition] {
+	width: 100%;
+	position: relative;
+}
+
+[data-magellan-expedition] a {
+	border-color: black;
+	color: black;
+}
+
+dd.active a {
+	border-color: #008cba!important;
+	color: white!important;
+	border-radius: 0!important;
+}
+
+
+dd.active a:hover {
+	color: #0078a0!important;
+}
+
+.main-nav {
+	background: transparent;
+}
+
+.main-nav .on-scroll {
+	display: none;
+}
+
+.main-nav .before-scroll {
+	display: block;
+}
+
+.fixed {
+	background: rgb(237, 237, 237);
+	transition: background-color 600ms ease-out;
+}
+
+.fixed .before-scroll {
+	display: none;
+}
+
+.fixed .on-scroll {
+	display: block;
+	z-index: 10;
+}
+
+.fixed a {
+	padding: 0!important;
+	border: 1px solid!important;
+	font-weight: 300!important;
+}
+
+.fixed a:hover, .to-top:hover {
+	color: #0078a0!important;
+	border-color: #0078a0!important;
+	background: transparent!important;
+}
+
+.fixed .sub-nav{
+	padding: 20px;
+}
+
+.fixed a {
+	background: #d25858;
+	color: white!important;
+	padding: 10px 20px!important;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+}
+
+
+	#intro {
+		position: relative;
+		top: -120px!important;
+		}
