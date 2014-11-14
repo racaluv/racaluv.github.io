@@ -8,6 +8,7 @@ body, html, #main-content {
 	background: url(/img/main-banner-bg.jpg);
 	background-size: cover;
 	background-position: bottom;
+	background-attachment: fixed;
 }
 
 .main-banner-content {
@@ -16,7 +17,7 @@ body, html, #main-content {
 	width: 100%;
 }
 
-.banner-link, .banner-logo {
+.banner-link, .banner-logo, dd a {
 	text-align: center;
 }
 
@@ -37,10 +38,12 @@ body, html, #main-content {
 
 .section-container {
 	min-height: 100%;
+	padding: 20px 0px;
 }
 
 dd {
-	margin: 0;
+width: 100%;
+margin: 0!important;
 }
 
 .sub-nav {
@@ -122,7 +125,12 @@ dd.active a:hover {
 }
 
 
-	#intro {
-		position: relative;
-		top: -120px!important;
-		}
+#silent, #front, #rac, #sponsors {
+	position: relative;
+	top: -105px!important;
+	}
+
+
+
+
+
