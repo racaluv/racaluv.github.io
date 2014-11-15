@@ -19,14 +19,14 @@
 	<div id="main-banner">
 		<div class="main-banner-content">
 			<div class="row">
-				<div class="large-4 large-centered columns banner-logo">
+				<div class="large-4 large-centered columns banner-logo content1">
 					<img src="img/rac-a-luv-logo.png">
 					<p></p>
 				</div>
 					<div data-magellan-expedition="fixed" class="main-nav">
 					  	<dl class="sub-nav before-scroll">
 							<div class="row">
-						   		<div class="large-8 large-centered columns banner-link">
+						   		<div class="large-8 large-centered columns banner-link content2">
 								  <div class="large-6 large-centered columns banner-link">
 								    <dd data-magellan-arrival="silent"><a href="#silent"><i class="fa fa-angle-double-down"></i></a></dd>
 								  </div>
@@ -64,14 +64,14 @@
 		<div id="silent-sanctuary" class="section-container">
 			<section>
 				<div class="row">
-					<div class="large-6 columns">
+					<div class="large-6 columns content1">
 						<div class="ss-slider">
 							<div><img src="img/ss-slide1.jpg"></div>
 							<div><img src="img/ss-slide2.jpg"></div>
 							<div><img src="img/ss-slide3.jpg"></div>
 						</div>
 					</div>
-					<div class="large-6 columns">
+					<div class="large-6 columns content2">
 						<h1>Silent Sanctuary</h1>
 						<p>A 5-piece Filipino band. They entered the OPM (Original Pilipino Music) scene in 2006 with their songs “Rebound”, “Ikaw Lamang”, “Summer Song”, “Kundiman”, and “Ingat ka”. In their second studio album called Mistaken for Granted, the album's first single is called "Hay Naku" and the second one is called "Hiling". Silent Sanctuary was formed in 2001 with just three founding members, Norman Dellosa (vocals, guitars), Paolo Legaspi (bass guitar), and Allen Calixto (drums). As a growing band, they experimented in their music by mixing in classical instruments to make a unique sound, adding the fourth member, Norman's high school classmate Anjo Inacay (cellist) to the line-up. In 2002 they were asked to guest in UnTV's In the Raw where Anjo asked Jett Ramirez to create string arrangements for their performance.</p>
 					</div>
@@ -176,5 +176,18 @@
     	});
 	</script>
 
+    <!-- Animate -->
+    <script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('.content1').addClass("hidden").viewportChecker({
+		    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+		    offset: 100    
+		   });   
+		jQuery('.content2').addClass("hidden").viewportChecker({
+		    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+		    offset: 200    
+		   });   
+	});            
+	</script>
   </body>
 </html>
