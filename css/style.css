@@ -57,6 +57,15 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
 	border-radius: 50%;
 	border: 2px solid white!important;
+	transition: background-color 300ms ease-out;
+}
+
+.banner-link a:hover {
+	background: white;
+}
+
+.banner-link a:hover i8 {
+	color: #d25858;
 }
 
 .section-container {
