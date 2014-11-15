@@ -186,9 +186,9 @@ dd.active a:hover {
 }
 
 .slick-dots li button:before {
-	color:gray;
+	color:gray!important;
 }
 
 .slick-dots li.slick-active button:before {
-	color:white;
+	color:white!important;
 }
