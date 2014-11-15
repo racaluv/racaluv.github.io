@@ -51,12 +51,12 @@ h1, h2, h3, h4, h5, h6 {
 .banner-link a {
 	background: #d25858;
 	color: white!important;
-	padding: 14px 38px!important;
-	font-size: 24px;
+	padding: 7px 19px!important;
+	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
-	display: block;
+	border-radius: 50%;
+	border: 2px solid white!important;
 }
 
 .section-container {
