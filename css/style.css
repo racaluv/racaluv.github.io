@@ -193,3 +193,9 @@ dd.active a:hover {
 	color:white!important;
 }
 
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
