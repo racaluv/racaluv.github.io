@@ -185,4 +185,10 @@ dd.active a:hover {
 	right: 10px!important;
 }
 
+.slick-dots li button:before {
+	color:gray;
+}
 
+.slick-dots li.slick-active button:before {
+	color:white;
+}
