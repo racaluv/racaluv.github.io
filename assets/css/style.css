@@ -85,6 +85,7 @@ margin: 0!important;
 
 .sub-nav {
 	margin: 0;
+	overflow: visible;
 }
 
 [data-magellan-expedition] {
@@ -110,6 +111,7 @@ dd.active a:hover {
 
 .main-nav {
 	background: transparent;
+		z-index: 99999;
 }
 
 .main-nav .on-scroll {
@@ -123,6 +125,7 @@ dd.active a:hover {
 .fixed {
 	background: rgb(237, 237, 237);
 	transition: background-color 600ms ease-out;
+	padding: 0;
 }
 
 .fixed .before-scroll {
@@ -202,16 +205,41 @@ dd.active a:hover {
 }
 .visible{
      opacity:1;
+     z-index: 1;
 }
 
-.banner-logo {
+.banner-logo, .ss-banner {
 -vendor-animation-delay: .8s!important;
     -webkit-animation-delay: .8s; /* Chrome, Safari, Opera */
     animation-delay: .8s;
 }
 
-.banner-link {
+.banner-link a, .ss-text {
 -vendor-animation-delay: 1.1s!important;
     -webkit-animation-delay: 1.1s; /* Chrome, Safari, Opera */
     animation-delay: 1.1s;
+}
+
+.first-p {
+	-vendor-animation-delay: .3s!important;
+    -webkit-animation-delay: .3s; /* Chrome, Safari, Opera */
+    animation-delay: .3s;
+}
+
+.second-p {
+	-vendor-animation-delay: .5s!important;
+    -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+.third-p {
+	-vendor-animation-delay: .7s!important;
+    -webkit-animation-delay: .7s; /* Chrome, Safari, Opera */
+    animation-delay: .7s;
+}
+
+.fourth-p {
+	-vendor-animation-delay: .9s!important;
+    -webkit-animation-delay: .9s; /* Chrome, Safari, Opera */
+    animation-delay: .9s;
 }

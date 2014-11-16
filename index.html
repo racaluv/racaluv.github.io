@@ -33,9 +33,9 @@
 					<div data-magellan-expedition="fixed" class="main-nav">
 					  	<dl class="sub-nav before-scroll">
 							<div class="row">
-						   		<div class="large-8 large-centered columns hidden banner-link">
+						   		<div class="large-8 large-centered columns">
 								  <div class="large-6 large-centered columns banner-link">
-								    <dd data-magellan-arrival="silent"><a href="#silent"><i class="fa fa-angle-double-down"></i></a></dd>
+								    <dd data-magellan-arrival="silent"><a class="hidden" href="#silent"><i class="fa fa-angle-double-down"></i></a></dd>
 								  </div>
 								</div>
 						  	</div>
@@ -71,14 +71,14 @@
 		<div id="silent-sanctuary" class="section-container" data-stellar-background-ratio=".7"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
 			<section>
 				<div class="row">
-					<div class="large-6 columns">
+					<div class="large-6 columns ss-banner hidden">
 						<div class="ss-slider">
 							<div><img src="/assets/img/ss-slide1.jpg"></div>
 							<div><img src="/assets/img/ss-slide2.jpg"></div>
 							<div><img src="/assets/img/ss-slide3.jpg"></div>
 						</div>
 					</div>
-					<div class="large-6 columns">
+					<div class="large-6 columns ss-text hidden">
 						<h1>Silent Sanctuary</h1>
 						<p>A 5-piece Filipino band. They entered the OPM (Original Pilipino Music) scene in 2006 with their songs “Rebound”, “Ikaw Lamang”, “Summer Song”, “Kundiman”, and “Ingat ka”. In their second studio album called Mistaken for Granted, the album's first single is called "Hay Naku" and the second one is called "Hiling". Silent Sanctuary was formed in 2001 with just three founding members, Norman Dellosa (vocals, guitars), Paolo Legaspi (bass guitar), and Allen Calixto (drums). As a growing band, they experimented in their music by mixing in classical instruments to make a unique sound, adding the fourth member, Norman's high school classmate Anjo Inacay (cellist) to the line-up. In 2002 they were asked to guest in UnTV's In the Raw where Anjo asked Jett Ramirez to create string arrangements for their performance.</p>
 					</div>
@@ -102,17 +102,23 @@
 			</section>
 		</div>
 	<a name="rac" id="rac"></a>
-		<div class="section-container">
+		<div id="about-rotaract" class="section-container">
 			<section>
 				<div class="row">
 					<div class="large-12 columns">
-						<h1>RAC A LUV</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h1>ABOUT ROTARACT CLUB</h1>
+						<p class="first-p">
+						Rotaract Club of Virac is a community-based service club for young men and women ages 18 to 30 who are dedicated to community and international service. It has opened a venue for young Catandunganons who want to be part of positive changes in the community, to share ideas, to build new friendship, and to look at the world’s challenges in a new way. It has been honing potential leaders of our community and has continually undertaken numerous projects and programs which have helped our less fortunate fellow Catandunganons for the past six Rotaract Years since its creation.
+						</p>
+						<p class="second-p">
+						The Rotaract Club of Virac, a service, leadership, and community service organization and a proud member of the Rotary International, will be presenting RAC-a-LUV II: A Valentine Benefit Concert featuring Silent Sanctuary with front act performances from Jaq Dionisio of Kiss Jane and other local bands on 13 February 2015.
+						</p>
+						<p class="third-p">	
+						The main objective of this concert is to generate funds for Rotaract Club’s community service projects as well as to promote and develop our local and home-grown talents. 
+						</p>
+						<p class="fourth-p">
+						Last year’s concert was a success by all measure, from the number of attendees with a record of more than 3,000 attendees, to the number of local talents who have performed, and most importantly the funds generated enough to sponsor a rehabilitation of a Day Care Center not to mention all other activities such as feedings, tsinelas drive and other quality service projects for the less fortunate not just in Virac but in other towns as well.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -191,10 +197,22 @@
 
 	<!-- Waypoints -->
 	<script type="text/javascript">
-		$( document ).ready(function() {
-			  $('.banner-logo, .banner-link').addClass('animated fadeInDown visible');
-			   $('#main-banner').addClass('animated fadeIn visible');
+		$( document ).ready(function(down) {
+			  $('.banner-logo, .banner-link a').addClass('animated fadeInDown visible');
+			  $('#main-banner').addClass('animated fadeIn visible');
 			});
+
+		$('#silent-sanctuary').waypoint(function() {
+		     $('.ss-banner, .ss-text').addClass('animated fadeInRight visible');   
+		      }, {
+		         offset: '300'
+		    });
+
+		$('#about-rotaract').waypoint(function() {
+		     $('.first-p, .second-p, .third-p, .fourth-p').addClass('animated fadeInRight visible');   
+		      }, {
+		         offset: '300'
+		    });
 	</script>
   </body>
 </html>
