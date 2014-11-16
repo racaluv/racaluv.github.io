@@ -21,7 +21,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-	<div id="main-banner">
+	<div id="main-banner" data-stellar-background-ratio="0.5"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
 		<div class="main-banner-content">
 			<div class="row">
 				<div class="large-4 large-centered columns banner-logo">
@@ -66,7 +66,7 @@
 
 	<div id="main-content">
 	<a name="silent" id="silent"></a>
-		<div id="silent-sanctuary" class="section-container">
+		<div id="silent-sanctuary" class="section-container" data-stellar-background-ratio=".7"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
 			<section>
 				<div class="row">
 					<div class="large-6 columns">
@@ -180,6 +180,11 @@
   			autoplay: true,
   			autoplaySpeed: 4000,
     	});
+	</script>
+
+	<!-- Stellar -->
+	<script type="text/javascript">
+		$(window).stellar();
 	</script>
   </body>
 </html>
