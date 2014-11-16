@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rac A Luv II</title>
+    <meta name="author" content="Zim Arcilla">
     <meta property="og:image" content="http://racaluv.github.io/assets/img/rac-a-luv-fb-image.jpg" />
     <meta property="og:title" content="Rac A Luv 2" />
     <meta property="og:description" content="Rac A Luv 2 with Silent Sanctuary" />
@@ -14,6 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/foundation.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/slick/slick.css" />
 
     <script src="assets/js/vendor/modernizr.js"></script>
@@ -21,17 +23,17 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-	<div id="main-banner" data-stellar-background-ratio="0.5"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
+	<div id="main-banner" class="hidden" data-stellar-background-ratio="0.5"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
 		<div class="main-banner-content">
 			<div class="row">
-				<div class="large-4 large-centered columns banner-logo">
+				<div class="large-4 large-centered columns hidden banner-logo">
 					<img src="/assets/img/rac-a-luv-logo.png">
 					<p></p>
 				</div>
 					<div data-magellan-expedition="fixed" class="main-nav">
 					  	<dl class="sub-nav before-scroll">
 							<div class="row">
-						   		<div class="large-8 large-centered columns banner-link">
+						   		<div class="large-8 large-centered columns hidden banner-link">
 								  <div class="large-6 large-centered columns banner-link">
 								    <dd data-magellan-arrival="silent"><a href="#silent"><i class="fa fa-angle-double-down"></i></a></dd>
 								  </div>
@@ -138,7 +140,7 @@
     <script src="assets/js/foundation.min.js"></script>
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <script src="assets/js/jquery.stellar.min.js"></script>
-    <script type="text/javascript" src="assets/js/viewportchecker.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
     <script>
       $(document).foundation();
     </script>
@@ -185,6 +187,14 @@
 	<!-- Stellar -->
 	<script type="text/javascript">
 		$(window).stellar();
+	</script>
+
+	<!-- Waypoints -->
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			  $('.banner-logo, .banner-link').addClass('animated fadeInDown visible');
+			   $('#main-banner').addClass('animated fadeIn visible');
+			});
 	</script>
   </body>
 </html>

@@ -69,6 +69,10 @@ p {
 	color: #d25858;
 }
 
+.banner-link dd {
+	overflow: visible!important;
+}
+
 .section-container {
 	min-height: 100%;
 	padding: 20px 0px;
@@ -198,4 +202,16 @@ dd.active a:hover {
 }
 .visible{
      opacity:1;
+}
+
+.banner-logo {
+-vendor-animation-delay: .8s!important;
+    -webkit-animation-delay: .8s; /* Chrome, Safari, Opera */
+    animation-delay: .8s;
+}
+
+.banner-link {
+-vendor-animation-delay: 1.1s!important;
+    -webkit-animation-delay: 1.1s; /* Chrome, Safari, Opera */
+    animation-delay: 1.1s;
 }
