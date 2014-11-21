@@ -112,6 +112,7 @@ dd.active a:hover {
 .main-nav {
 	background: transparent;
 		z-index: 99999;
+		padding:0;
 }
 
 .main-nav .on-scroll {
