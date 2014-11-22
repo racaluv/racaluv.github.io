@@ -22,10 +22,18 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+    <script>
+		// Wait for window load
+		$(window).load(function() {
+			// Animate loader off screen
+			$("#loader").animate({
+				top: -200
+			}, 1500);
+		});
+	</script>	
   </head>
   <body>
-
+  <img src="download.png" id="loader">
   <!-- MAIN MENU -->
 
 	<div data-magellan-expedition="fixed" class="main-nav">
