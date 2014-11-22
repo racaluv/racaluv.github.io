@@ -23,6 +23,12 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
+   	<script>
+		$(window).load(function(){
+			$("#loader").fadeOut("slow");
+		});
+	</script>
+
   </head>
   <body>
 
@@ -280,12 +286,6 @@
 		    $('.top-bar ul.right li').click(function() {
 		       $('.top-bar').removeClass('expanded');
 		    });
-		});
-	</script>
-
-	<script>
-		$(window).load(function(){
-			$("#loader").fadeOut("slow");
 		});
 	</script>
   </body>
