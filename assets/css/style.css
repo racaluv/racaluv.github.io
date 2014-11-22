@@ -262,6 +262,7 @@ margin-right: 20px;
     -webkit-animation-delay: .9s; /* Chrome, Safari, Opera */
     animation-delay: .9s;
 }
+<<<<<<< HEAD
 
 .mobile-nav {
 	display: none;
@@ -291,3 +292,5 @@ margin-right: 20px;
 
 /* XXLarge screens */
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+=======
+>>>>>>> origin/master
