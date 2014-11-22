@@ -50,28 +50,28 @@
 		  </div>
 	  </dl>
 		<!-- MOBILE MENU -->
-		<nav class="top-bar mobile-nav" data-topbar role="navigation">
+		<nav class="top-bar mobile-nav" data-options="is_hover: false" data-topbar role="navigation">
 		  <ul class="title-area">
 		    <li class="name">
 		      
 		    </li>
 		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-		    <li class="toggle-topbar menu-icon"><a><span></span></a></li>
+		    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 		  </ul>
 
 		  <section class="top-bar-section">
 		    <!-- Right Nav Section -->
 		    <ul class="right">
-		      <li><a href="#silent">SILENT SANCTUARY</a></li>
-		      <li><a href="#front">FRONT-ACT</a></li>
-		      <li><a href="#rac">ROTARACT</a></li>
-		      <li><a href="#sponsors">SPONSORS</a></li>
-		      <li><a href="#top">BACK TO TOP</a></li>
+
 		    </ul>
 
 		    <!-- Left Nav Section -->
 		    <ul class="left">
-		     
+		    	<li><a href="#silent">SILENT SANCTUARY</a></li>
+		     	<li><a href="#front">FRONT-ACT</a></li>
+		    	<li><a href="#rac">ROTARACT</a></li>
+		    	<li><a href="#sponsors">SPONSORS</a></li>
+		    	<li><a href="#top">BACK TO TOP</a></li>
 		    </ul>
 		  </section>
 		</nav>
@@ -98,7 +98,7 @@
 			<section>
 			<div class="row">
 				<div class="large-8 large-centered columns center">
-					<h1>SILENT SANCTUARY</h1>
+					<h1 id="silent-title" class="hidden">SILENT SANCTUARY</h1>
 					<br>
 				</div>
 			</div>
@@ -238,7 +238,8 @@
 			});
 
 		$('#silent-sanctuary').waypoint(function() {
-		     $('.ss-banner, .ss-text').addClass('animated fadeInRight visible');   
+		     $('.ss-banner, .ss-text').addClass('animated fadeInRight visible');
+		     $('#silent-title').addClass('animated fadeInDown visible'); 
 		      }, {
 		         offset: '300'
 		    });
@@ -249,6 +250,13 @@
 		         offset: '300',
 		         triggerOnce: true
 		    });
+	</script>
+	<script type="text/javascript">
+		    $(document).ready(function() {
+		    $('.top-bar ul.right li').click(function() {
+		       $('.top-bar').removeClass('expanded');
+		    });
+		});
 	</script>
   </body>
 </html>
