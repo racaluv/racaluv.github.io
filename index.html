@@ -51,7 +51,7 @@
 		  </div>
 	  </dl>
 		<!-- MOBILE MENU -->
-		<nav class="top-bar mobile-nav" data-options="is_hover: false" data-topbar role="navigation">
+		<nav class="top-bar mobile-nav" data-options="scrolltop : false" data-topbar role="navigation">
 		  <ul class="title-area">
 		    <li class="name">
 		      
@@ -180,13 +180,20 @@
     
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/foundation.min.js"></script>
+    <script src="assets/js/foundation/foundation.topbar.js"></script>
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <script src="assets/js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
     <script>
       $(document).foundation();
     </script>
-
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+		    $('.top-bar li a').click(function() {
+		       $('.top-bar').removeClass('expanded');
+		    });
+		}(jQuery));
+	</script>
     <script type="text/javascript">
         jQuery(document).foundation({
             "magellan-expedition": {
@@ -252,12 +259,6 @@
 		         triggerOnce: true
 		    });
 	</script>
-	<script type="text/javascript">
-		    $(document).ready(function() {
-		    $('.top-bar ul.right li').click(function() {
-		       $('.top-bar').removeClass('expanded');
-		    });
-		});
-	</script>
+
   </body>
 </html>
