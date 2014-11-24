@@ -51,7 +51,7 @@
 		  </div>
 	  </dl>
 		<!-- MOBILE MENU -->
-		<nav class="top-bar mobile-nav" data-options="scrolltop : false" data-topbar role="navigation">
+		<nav class="top-bar mobile-nav" data-options="scrolltop : false, sticky_class : 'sticky'" data-topbar role="navigation">
 		  <ul class="title-area">
 		    <li class="name">
 		      
@@ -81,7 +81,7 @@
 	<!-- MAIN MENU END -->
 					</div>
 
-	<div id="main-banner" class="hidden" data-stellar-background-ratio="0.5"  data-stellar-vertical-offset="100" data-stellar-horizontal-offset="240">
+	<div id="main-banner" class="hidden" data-stellar-background-ratio="0.5"  data-stellar-vertical-offset="100">
 		<div class="main-banner-content">
 			<div class="row">
 				<div class="large-4 large-centered columns banner-logo">
@@ -187,10 +187,18 @@
     <script>
       $(document).foundation();
     </script>
+    <!-- Stellar -->
+	<script type="text/javascript">
+		$('body').stellar({
+			horizontalScrolling: false,
+
+			});
+	</script>
     <script type="text/javascript">
 		jQuery(document).ready(function($) {
 		    $('.top-bar li a').click(function() {
 		       $('.top-bar').removeClass('expanded');
+		       $('body').removeClass('f-topbar-fixed');
 		    });
 		}(jQuery));
 	</script>
@@ -231,11 +239,6 @@
   			autoplay: true,
   			autoplaySpeed: 4000,
     	});
-	</script>
-
-	<!-- Stellar -->
-	<script type="text/javascript">
-		$(window).stellar();
 	</script>
 
 	<!-- Waypoints -->

@@ -300,12 +300,12 @@ margin-right: 20px;
 		display: none;
 		}
 
-	#main-banner {
+/*	#main-banner {
 		background: url(/assets/img/mobile-banner-bg.jpg);
 		background-size: cover!important;
 		background-position: bottom!important;
 		background-attachment: fixed!important;
-		}
+		}*/
 
 	#silent, #front, #rac, #sponsors {
 		position: relative;
