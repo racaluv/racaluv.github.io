@@ -76,22 +76,23 @@ hr {
 }
 
 .banner-link i{
-	background: white;
+	background: #d25858;
 	border-radius: 50%;
 	font-size: 26px;
-	color: red;
+	color: white;
 	height: 60px;
 	width: 60px;
 	line-height: 64px;
 	transition: background-color 300ms ease-out;
+	margin-top: -28px;
 }
 
 .banner-link:hover i {
-	background: #d25858;
+	background: white;
 }
 
 .banner-link:hover i {
-	color: white;
+	color: #d25858;
 }
 
 .section-container {
@@ -252,7 +253,7 @@ margin-right: 20px;
     animation-delay: .8s;
 }
 
-.banner-link {
+.banner-link i{
 	-vendor-animation-delay: 1.1s!important;
     -webkit-animation-delay: 1.1s; /* Chrome, Safari, Opera */
     animation-delay: 1.1s;

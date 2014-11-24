@@ -95,7 +95,7 @@
 
 	<div id="main-content">
 	<a name="silent" id="silent"></a>
-		<div id="silent-sanctuary" class="section-container" data-stellar-background-ratio=".7"  data-stellar-vertical-offset="">
+		<div id="silent-sanctuary" class="section-container" data-stellar-background-ratio=".7"  data-stellar-vertical-offset="100">
 			<section>
 			<div class="row">
 				<div class="large-8 large-centered columns center">
@@ -244,8 +244,9 @@
 	<!-- Waypoints -->
 	<script type="text/javascript">
 		$( document ).ready(function(down) {
-			  $('.banner-logo img, .banner-link').addClass('animated fadeInDown visible');
+			  $('.banner-logo img, .banner-link i').addClass('animated fadeInDown visible');
 			  $('#main-banner').addClass('animated fadeIn visible');
+			  $('.banner-link i').addClass('animated zoomIn visible');
 			});
 
 		$('#silent-sanctuary').waypoint(function() {
