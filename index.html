@@ -39,7 +39,7 @@
 <!-- PRELOADER -->
 <div id="loader-wrapper">
     <div id="loader"></div>
-
+    <div id="loader-text">Page is Loading, Please Wait...<br><br><a href="#" class="button small">Watch Our Video Teaser!</a></div>
     <div class="loader-section"></div>
 
 </div>
@@ -404,7 +404,9 @@
  
 		    
 		        $('body').removeClass('loading');
-		   
+		   		$('.banner-logo img, .banner-link i').addClass('animated fadeInDown visible');
+			  $('#main-banner').addClass('animated fadeIn visible');
+			  $('.banner-link i').addClass('animated zoomIn visible');
 		 
 		});
 
@@ -481,9 +483,7 @@
 	<!-- Waypoints -->
 	<script type="text/javascript">
 		$( document ).ready(function(down) {
-			  $('.banner-logo img, .banner-link i').addClass('animated fadeInDown visible');
-			  $('#main-banner').addClass('animated fadeIn visible');
-			  $('.banner-link i').addClass('animated zoomIn visible');
+			  
 			});
 
 		$('#silent-sanctuary').waypoint(function() {
