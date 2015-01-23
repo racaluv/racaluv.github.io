@@ -283,6 +283,66 @@ margin-right: 20px;
     animation-delay: .9s;
 }
 
+.gallery-1 {
+	-vendor-animation-delay: 1.1s!important;
+    -webkit-animation-delay: 1.1s; /* Chrome, Safari, Opera */
+    animation-delay: 1.1s;
+}
+
+.gallery-2 {
+	-vendor-animation-delay: 1.3s!important;
+    -webkit-animation-delay: 1.3s; /* Chrome, Safari, Opera */
+    animation-delay: 1.3s;
+}
+
+.gallery-3 {
+	-vendor-animation-delay: 1.5s!important;
+    -webkit-animation-delay: 1.5s; /* Chrome, Safari, Opera */
+    animation-delay: 1.5s;
+}
+
+.gallery-4 {
+	-vendor-animation-delay: 1.7s!important;
+    -webkit-animation-delay: 1.7s; /* Chrome, Safari, Opera */
+    animation-delay: 1.7s;
+}
+
+.gallery-5 {
+	-vendor-animation-delay: 1.9s!important;
+    -webkit-animation-delay: 1.9s; /* Chrome, Safari, Opera */
+    animation-delay: 1.9s;
+}
+
+.gallery-6 {
+	-vendor-animation-delay: 2.1s!important;
+    -webkit-animation-delay: 2.1s; /* Chrome, Safari, Opera */
+    animation-delay: 2.1s;
+}
+
+.gallery-7 {
+	-vendor-animation-delay: 2.3s!important;
+    -webkit-animation-delay: 2.3s; /* Chrome, Safari, Opera */
+    animation-delay: 2.3s;
+}
+
+.gallery-8 {
+	-vendor-animation-delay: 2.5s!important;
+    -webkit-animation-delay: 2.5s; /* Chrome, Safari, Opera */
+    animation-delay: 2.5s;
+}
+
+.front-act-1, .front-act-2 {
+	-vendor-animation-delay: .3s!important;
+    -webkit-animation-delay: .3s; /* Chrome, Safari, Opera */
+    animation-delay: .3s;
+}
+
+.front-act-3, .front-act-4 {
+	-vendor-animation-delay: .6s!important;
+    -webkit-animation-delay: .6s; /* Chrome, Safari, Opera */
+    animation-delay: .6s;
+}
+
 .mobile-nav {
 	display: none;
 }
