@@ -299,6 +299,23 @@ margin-right: 20px;
 	color: white!important;
 }
 
+.gallery-slides img {
+	margin-right: 5px;
+}
+
+.clearing-thumbs li {
+	margin: 0;
+}
+
+.panel {
+	background: #C83A3A;
+	border: 0;
+}
+
+.panel p, .panel h3, .panel h5 {
+	color: white;
+}
+
 /* MEDIA QUERIES */
 
 /* Small screens */
