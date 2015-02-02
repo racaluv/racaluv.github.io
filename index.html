@@ -55,14 +55,17 @@
 			  	<div class="large-3 columns">
 			    	<dd data-magellan-arrival="silent"><a href="#silent">SILENT SANCTUARY</a></dd>
 			  	</div>
-				<div class="large-3 columns">
+				<div class="large-2 columns">
 			    	<dd data-magellan-arrival="front"><a href="#front">FRONT-ACT</a></dd>
 			  	</div>
 			  	<div class="large-3 columns">
 			    	<dd data-magellan-arrival="rac"><a href="#rac">ABOUT ROTARACT</a></dd>
 			  	</div>
-				<div class="large-3 columns">
+				<div class="large-2 columns">
 			    	<dd data-magellan-arrival="sponsors"><a href="#sponsors">SPONSORS</a></dd>
+			  	</div>
+			  	<div class="large-2 columns">
+			    	<dd data-magellan-arrival="sponsors"><a href="#ticket">TICKETS</a></dd>
 			  	</div>
 			</div>
 			<div class="medium-1 columns">
@@ -92,6 +95,7 @@
 		     	<li><a href="#front">FRONT-ACT</a></li>
 		    	<li><a href="#rac">ABOUT ROTARACT</a></li>
 		    	<li><a href="#sponsors">SPONSORS</a></li>
+		    	<li><a href="#ticket">TICKETS</a></li>
 		    	<li><a href="#top">BACK TO TOP</a></li>
 		    </ul>
 		  </section>
@@ -393,6 +397,97 @@
 			</section>
 		</div>
 
+	<a name="ticket" id="ticket"></a>
+		<div class="section-container">
+			<section class="ticket-container">
+				<div class="row">
+					<div class="large-12 columns">
+						<h1>TICKET PRICES</h1>
+						<div class="row">
+							
+							<div class="large-4 price ticket-1 hidden columns">
+								<img src="/assets/img/vip.png">								
+							</div>
+							<div class="large-4 price ticket-2 hidden columns">
+								<img src="/assets/img/general.png">
+							</div>
+							<div class="large-4 price ticket-3 hidden columns">
+								<img src="/assets/img/patron.png">
+							</div>
+						</div>
+						<br>&nbsp;
+						
+						<div class="large-5 large-centered columns">
+							<h3 style="color:white;">RAC A LUV II with SILENT SANCTUARY</h3>
+							<h5 style="color:white;">a Valentine Benefit Concert</h5>
+							<hr>
+							<p style="color:white;"><strong>February 13, 2015 @ 7:00 PM</strong><br>
+							Virac Sports Center, Rawis, Virac, Catanduanes</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<br>&nbsp;
+			<section>
+						<div class="row">
+							<h1>TICKET OUTLETS</h1>
+
+							<div class="large-4 columns">
+								<div class="panel">
+									<h3>SHOP N' PLAY</h3>
+									<hr>
+									<p>Rawis Virac, Catanduanes</p>
+								</div>
+								
+							</div>
+							<div class="large-4 columns">
+								<div class="panel">
+									<h3>STOP N' SHOP</h3>
+									<hr>
+									<p>All Branches</p>
+								</div>
+						
+							</div>
+							<div class="large-4 columns">
+								<div class="panel">
+									<h3>I-LINK INTERNET CAFE</h3>
+									<hr>
+									<p>San Pablo Virac, Catanduanes</p>
+								</div>
+								
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="large-6 large-centered columns">
+								<div class="panel" style="text-align:center;">
+									<h3>FOR MORE DETAILS</h3>
+									<hr>
+									<ul class="contacts">
+										<li><i class="fa fa-phone"></i><strong>Camille</strong> : 0921-623-5238</li>
+										<li><a href="https://www.facebook.com/rotaract.club.virac" target="_blank"><i class="fa fa-facebook"></i>Rotaract Virac on Facebook</a></li>
+										
+									</ul>
+
+								</div>
+							</div>
+						</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="row">
+				<div class="large-12">
+					<section>
+						<img src="/assets/img/sponsors.jpg">
+						<br>&nbsp;
+						<p style="text-align:center"><a href="www.rotaract-virac.org" target="_blank">Rotaract Club of Virac</a> © 2015 | Website By: <a href="www.zimarcilla.com" target="_blank">Zim Arcilla</a></p>
+					</section>
+				</div>
+			</div>
+		</footer>
+
 
     
     <script src="assets/js/vendor/jquery.js"></script>
@@ -500,6 +595,15 @@
 		     $('.front-act-2').addClass('animated fadeInLeft visible'); 
 		     $('.front-act-3').addClass('animated fadeInRight visible'); 
 		     $('.front-act-4').addClass('animated fadeInLeft visible'); 
+		      }, {
+		         offset: '300',
+		         triggerOnce: true
+		    });
+
+		$('#ticket').waypoint(function() {
+		     $('.ticket-1').addClass('animated flipInX visible');
+		     $('.ticket-2').addClass('animated flipInX visible');  
+		   	 $('.ticket-3').addClass('animated flipInX visible'); 
 		      }, {
 		         offset: '300',
 		         triggerOnce: true

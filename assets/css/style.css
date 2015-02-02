@@ -199,7 +199,7 @@ color: white;
 margin-right: 20px;
 }
 
-#silent, #front, #rac, #sponsors {
+#silent, #front, #rac, #sponsors, #ticket {
 	position: relative;
 	top: -80px!important;
 	}
@@ -270,6 +270,24 @@ margin-right: 20px;
 	-vendor-animation-delay: .6s!important;
     -webkit-animation-delay: .6s; /* Chrome, Safari, Opera */
     animation-delay: .6s;
+}
+
+.ticket-1{
+	-vendor-animation-delay: .3s!important;
+    -webkit-animation-delay: .3s; /* Chrome, Safari, Opera */
+    animation-delay: .3s;
+}
+
+.ticket-2{
+	-vendor-animation-delay: .5s!important;
+    -webkit-animation-delay: .5s; /* Chrome, Safari, Opera */
+    animation-delay: .5s;
+}
+
+.ticket-3{
+	-vendor-animation-delay: .7s!important;
+    -webkit-animation-delay: .7s; /* Chrome, Safari, Opera */
+    animation-delay: .7s;
 }
 
 .mobile-nav {
@@ -423,6 +441,58 @@ margin-right: 20px;
         }
     }
 
+.price {
+	text-align: center;
+}
+
+.price img {
+	width: 80%;
+}
+
+.ticket-container, footer {
+	text-align: center;
+	background: rgb(37, 37, 37);
+	padding: 44px 0;
+}
+
+footer p {
+	color: white;
+}
+
+footer a {
+	color: #C83A3A;
+}
+
+.ticket-container  h1{
+	color: white;
+	margin-bottom: 20px;
+}
+
+.contacts {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+}
+
+.contacts li {
+	display: inline-block;
+	margin: 0 20px;
+	color: white;
+}
+
+.contacts a {
+	color: white;
+}
+
+.contacts i{
+	background: white;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	line-height: 31px;
+	margin-right: 10px;
+	color: #C83A3A;
+}
 
 /* MEDIA QUERIES */
 
